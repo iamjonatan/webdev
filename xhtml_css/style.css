@@ -1,0 +1,64 @@
+body{background-color: #ffcc99;
+	color: ;
+	background-image: url(afri.png);
+	background-repeat: no-repeat;
+	background-position: 50% 70px;
+}
+h1 {color: red;
+	text-align: center;
+	background-color: orange; 
+	
+}
+p {color: black; 
+	font-family: arial;
+	line-height: 125%;
+	text-indent: 25px;
+	background-color: ;
+	margin: 0px;
+}
+ul{font-weight: bold;
+	font-style: italic;
+	list-style-type: circle;
+	border: 1px solid red;
+	}
+
+h2{background-color: orange;
+   width: 70%;
+   border:  3px solid green;
+   padding-top: 10px;
+   padding-bottom: 5px;
+   padding-left:30px;
+   border-bottom-color:green;
+   border-bottom-width:3px;
+   border-bottom-style: dotted;
+}
+a:link{color: blue;
+		text-decoration:none;
+}
+a:visited{color:purple;
+		
+}
+a:hover{color:red;
+		background-color: white;
+		text-decoration:underline;
+		font-weight: bold;
+}
+a:active{background-color: orange;
+}
+table{
+}
+tr{background-color:white;
+}
+span{font-weight:bold;
+	color: green;}
+div{border: ;
+	position: ;
+}
+.redtext{color: red;}
+.bluetext{color: blue;}
+p:first-letter{ font weigh: bold;
+	font-size: 15 px;
+	color: green;	
+}
+
+			

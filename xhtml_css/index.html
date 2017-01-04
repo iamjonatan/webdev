@@ -1,65 +1,53 @@
 <!doctype html>
 <html>
 <head>
+<link href="style.css" rel="stylesheet" type="text/css" />
 <title> AfriLang</title>
-	<style type="text/css">
-		h1 {color: red;
-			text-align: center;
-		}
-		p {color: blue; 
-			font-family: arial;
-			line-height: 125%;
-			text-indent: 25px;
-		}
-		ul{font-weight: bold;
-			font-style: italic;
-			}
-		body{background-color: #ffcc99;
-			color: ;
-			background-image: url(afri.png);
-			background-repeat: no-repeat;
-			background-position: 50% 70px;
-		}
-			
-	</style>
 </head>
 
 <body>
 <!-- This is a tag for comment-->
 <h1>What is AfriLang?</h1>
-
+<form>
+	<p align="right"><input type="search" name="search" placeholder="write what you want to find"> <input type="submit" name="search" value="Search"></p>
+</form>
 <!-- link to about us, within the file -->
 <a href="#about_us">About us section</a>
-<p>AfriLang is short for African Languages.<br />from Jay</p>
-<a href="second.html">second page link</a>
+<p class="redtext">AfriLang is short for African Languages.<br /> &nbsp from Jay</p>
+<p><a href="second.html">second page link</a></p>
 <hr />
+<!--The below line can also work with "<h2 id="about_us">About Us</h2>"-->
 <h2><a name="about_us"></a>About us</h2>
 
-
+<!--LINKS:  1. Absolute - href="http://www.google.ca" (to a website)
+			2. Relative - href="second.html"  (same folder file)
+			3. Anchor links - href="#About_us" (to an id/name in the same file)-->
 <!--<a href="http:facebook.com"><img src="jon.jpg" height="500"/></a>-->
 
-<table border="1" cellpadding="10" cellspacing="0">
-	<tr>
-		<th colspan="2">AFRICA</th>
-	</tr>
-	<tr>
-		<th>Region</th>
-		<th>Common Languages</th>
-	</tr>
-	<tr>
-		<td>East Africa</td>
-		<td><p>1.Kiswahiri</p><p>2.Chichewa/chinyanja</p><p>3.kinyarwanda/kirundi</p></td>
-	</tr>
-	<tr>
-		<td>Southern Africa</td>
-		<td><p>Zulu, Shona, Xhosa, tswana</p></td>
-	</tr>
-</table>
+<div id="table_1">
+	<table border="1" cellpadding="10" cellspacing="0">
+		<tr>
+			<th colspan="2">AFRICA</th>
+		</tr>
+		<tr>
+			<th>Region</th>
+			<th>Common Languages</th>
+		</tr>
+		<tr>
+			<td>East Africa</td>
+			<td><p>1.Kiswahiri</p><p>2.Chichewa/chinyanja</p><p>3.kinyarwanda/kirundi</p></td>
+		</tr>
+		<tr>
+			<td>Southern Africa</td>
+			<td><p>Zulu, Shona, Xhosa, tswana</p></td>
+		</tr>
+	</table>
+</div>
 
 <p><strong ><em>For the second paragraph.</em></strong></p>
 <hr />
 <h2>home</h2>
-<p>Click the language you would like to learn from the list below:</p>
+<p class="bluetext"><span>Click</span> the language you would like to learn from the list below:</p>
 <ul>
 	<li> Chichewa</li>
 	<li> Swahili</li>
@@ -69,8 +57,29 @@
 	<li> Zulu</li>
 </ul>
 
+<p>To sign up, fill your details below</p>
+	<form>
+		<p>Email: <input type="email" name="email" placeholder="example@mail.com"> Username: <input type="text" name="username" placeholder="your username"></p>
+		<p>Password:<input type="password" name="psw" placeholder="at least 6 characters"> Re-type Pasword<input type="password" name="psw" placeholder="same as entered password">
+		<p>Birthday:<input type="date" name="bday" min="1930-01-01"></p>
+		<p>Favourite Color: <input type="color" name="favcolor" value="#ff0000"></p>
+		<p>Choose your nationality</p>
+		<p>African:<input type="radio" name="nationality"></p>
+		<p>Non-African:<input type="radio" name="nationality"></p>
+		<p><input type="checkbox" checked>Check if you want us to send you monthly updates</p>
+		<p><input type="button"  onclick="alert('an email has been sent to your address')" value="Sign Up"></p>
+	<hr />
+		<p>Donations: <select>
+						<option>$5</option>
+						<option selected>$10</option>
+						<option>Above $50</option>
+					</select>
+			<input type="submit" value="Continue">
+		</p>
+	</form>
+<hr />
 <!-- not recommended but great to learn-->
-<a href="mailto:jonathan.chirwa@mail.brabra">Email Jhone</a>
+<p><a href="mailto:jonathan.chirwa@mail.brabra">Email Jhone</a></p>
 <!-- link and tool tip-->
 <p><a href="http://google.com" title="Awesome search engine">link to goole</a></ps>
 
