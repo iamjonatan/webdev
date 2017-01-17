@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<!--This part below is for java script-->
+<script type="text/javascript">
+<!--	//these tags are a safety check for old browser. "//" is for online comment on js and "/* jajs */" is for multi-line comments
+	document.write("Check with js <br/>");
+	document.write("and another one <br/>");
+	//USe of variables
+	var x = -6806;
+	document.write("my variable x has value " + x +"  <br/>");
+	//types of variables in js
+	//int, double/float, strings, boolean
+	var s = "This is a string and escape character are \" like this \"<br/>";
+	document.write(s);
+	var name="jay";
+	var age= 22;
+	//functions
+	function popup(){
+		alert("Ouch");
+	}
+	//popup();
+	
+	function meatball(a,b){
+		document.write("I love "+ a + " and " + b +"<br/>");
+		return "positive";
+	}
+	document.write("The return was "+ meatball("beef","icecream"));
+	//next time start from tutorial #21 - do while (Bucky)
+	
+//-->
+</script>
+
+<form>
+	<input type="button" value="touch me" onclick="popup()">
+</form>
+
+</body>
